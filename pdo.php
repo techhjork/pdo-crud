@@ -169,7 +169,7 @@ if (isset($_REQUEST['delete']))
 		 <input type="text" name="id" class="form-control float-right" 
 		  value="<?php if (isset($_REQUEST['search']))
 {
-    echo $id;
+    echo htmlspecialchars($id);
 } ?>" placeholder="ID" maxlength="2" style="width:70%">
 	</div>
 	<div class="form-group">
